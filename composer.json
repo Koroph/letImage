@@ -28,7 +28,6 @@
   },
   "autoload-dev": {
     "files": [
-      "helper.php",
       "tests/ImageTest.php"
     ]
   },
