@@ -1,0 +1,46 @@
+{
+  "description": "image modification package",
+  "name": "koroph/letimage",
+  "type": "metapackage",
+  "license": "MIT",
+  "keywords": [
+    "image",
+    "resize",
+    "rotate"
+  ],
+  "authors": [
+    {
+      "name": "koroph",
+      "email": "yjk@outlook.fr"
+    }
+  ],
+  "require": {
+    "ext-gd": "*",
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "helper.php",
+      "tests/ImageTest.php"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "EasyImage\\Core\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "version": "1.0"
+}
